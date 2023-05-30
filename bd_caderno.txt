@@ -1,0 +1,25 @@
+CREATE DATABASE bd_caderno
+USE bd_caderno
+
+CREATE TABLE tb_usuario(
+id_usuario INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+nome_usuario VARCHAR(50),
+email_usuario VARCHAR(100),
+senha_usuario VARCHAR(30),
+telefone_usuario INT(11)
+);
+
+CREATE TABLE tb_caderno(
+id_caderno INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+cod_cadsup INT REFERENCES tb_caderno(id_caderno),
+cod_usuario INT REFERENCES tb_usuario(id_usuario),
+nome_caderno VARCHAR(40)
+);
+
+CREATE TABLE tb_nota(
+id_nota INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+cod_caderno INT REFERENCES tb_caderno(id_caderno),
+cod_usuario INT REFERENCES tb_usuario(id_usuario),
+titulo_nota VARCHAR(40),
+texto VARCHAR(1000)
+);UES ( 2,1);
