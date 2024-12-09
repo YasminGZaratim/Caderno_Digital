@@ -4,3 +4,4 @@ Seu diferencial é a possiblidade de inserção de notas digitalizadas diretamen
 Para resolver isso, foi desenvolvido um aplicativo que digitaliza a foto e manda diretamente para uma nota. 
 Foram utilizados CSS, HTML, JavaScript e PHP. 
 Para o banco de dados, foi utilizado o site Back4app.com; um banco de dados na nuvem que possibilitou a conexão entre o aplicativo e o site.
+O arquivo do site e da aplicação se encontram com o seguinte nome: digitalbook_final(1).zip (todos os outros arquivos estão desatualizados).
